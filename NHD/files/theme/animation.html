@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <!--[if lt IE 9]>
+  <script src="/files/theme/IE9.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+<div id="animation">
+<!--JavaScript - Might want to move these to the footer of the page to prevent blocking-->
+  <script type="text/javascript" src="/files/theme/jquery.min.js"></script>
+  <script type="text/javascript" src="/files/theme/jquery.qtip.min.js"></script>
+<!--Stylesheets-->
+<link rel="stylesheet" type="text/css" href="/files/theme/jquery.qtip.min.css" />
+
+	<img width="624" height="468" border="0" usemap="#hoverMap" alt="Turing Machine" src="/files/theme/turingmachine.jpg">
+	<map id="hoverMap" name="hoverMap">
+		<area alt="Head:
+This is the part of the Turing Machine that performs the operations designated by the configuration. It has a writing and erasing mechanism that allows it to perform the six Turing Primitives.
+" coords="468,197,10" shape="circle">
+		<area alt="Tape:
+“The machine is supplied with a ‘tape’ (the analogue of paper) running through it.”
+A Turing Machine writes its results on this tape.
+" coords="516,197,10" shape="circle">
+		<area alt="Configuration:
+“The configuration determines the possible behavior of the machine.”
+Each configuration has an operation for the Turing Machine to execute. By changing from one configuration to another, the Turing Machine will act differently.
+" coords="312,270,10" shape="circle">
+		<area alt="Symbol:
+Each square is “capable of bearing a ‘symbol.’”
+The symbols could be decimal digits 0 through 9, letters, or the 95 characters available from a computer keyboard.  The numbers computed by a Turing Machine are written in binary, and thus primarily use 0’s and 1’s.  
+" coords="93,197,10" shape="circle">
+		<area alt="Computable number:
+“A number is computable if its decimal can be written down by a machine.”
+A Turing Machine should be able to write the number using a finite number of configurations.
+" coords="261,197,10" shape="circle">
+		<area alt="Square:
+The tape is “divided into sections (called ‘squares’).”
+" coords="491,197,10" shape="circle">
+	</map>
+
+</div>
+
+<script class="example" type="text/javascript">
+// Create the tooltips only when document ready
+$(document).ready(function()
+{
+	// We'll target all AREA elements with alt tags (Don't target the map element!!!)
+	$('area[alt]').qtip(
+	{
+		content: {
+			attr: 'alt' // Use the ALT attribute of the area map for the content
+		},
+		style: {
+		  width: 190,
+			classes: 'ui-tooltip-tipsy ui-tooltip-shadow'
+		},
+		position: {
+		  my: 'top center',
+      at: 'bottom center',
+		}
+	});
+});
+</script>
+</body>
+</html>

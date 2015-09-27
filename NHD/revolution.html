@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Revolution - Alan Turing's Computational Revolution</title>
+
+<!--[if lt IE 9]>
+<script src="files/theme/IE9.js"></script>
+<![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script src="files/theme/simile-ajax-api.js" type="text/javascript"></script>
+<script src="files/theme/timeline-api.js?bundle=true" type="text/javascript"></script>
+<script>
+       var tl;
+       function onLoad() {
+           var eventSource1 = new Timeline.DefaultEventSource(0);
+           
+           
+           var theme1 = Timeline.ClassicTheme.create();
+           theme1.timeline_start = new Date(Date.UTC(1900, 0, 1));
+           theme1.timeline_stop  = new Date(Date.UTC(2000, 0, 1));
+           
+           var d = Timeline.DateTime.parseGregorianDateTime("1940")
+           var bandInfos = [
+               Timeline.createBandInfo({
+                   width:         "100%", // set to a minimum autoWidth will then adjust
+                   intervalUnit:   Timeline.DateTime.DECADE, 
+                   intervalPixels: 100,
+                   eventSource:    eventSource1,
+                   date:           d,
+                   theme:          theme1,
+                   layout:         'original'  // original, overview, detailed
+               })
+           ];
+
+           
+           tl = Timeline.create(document.getElementById("tl"), bandInfos, Timeline.HORIZONTAL);
+           tl.loadJSON("uploads/9/9/9/7/9997734/local_data.js", function(json, url) {
+                eventSource1.loadJSON(json, url);
+           });
+       if (resizeTimerID == null) {
+               resizeTimerID = window.setTimeout(function() {
+                   resizeTimerID = null;
+                   tl.layout();
+               }, 500);
+           }
+       }
+       var resizeTimerID = null;
+       function onResize() {
+           if (resizeTimerID == null) {
+               resizeTimerID = window.setTimeout(function() {
+                   resizeTimerID = null;
+                   tl.layout();
+               }, 500);
+           }
+       }
+</script>
+
+<link rel='stylesheet' href='http://nhd.weebly.com/editor/images/common/common-v2.css?22' type='text/css' />
+<link rel='stylesheet' type='text/css' href='files/main_style.css?1333915492' title='wsite-theme-css' />
+<style type='text/css'>
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-description, .blog-sidebar div.paragraph, .blog-sidebar p, .wsite-form-field label, .wsite-form-field label {font-family:Verdana !important;}
+#wsite-content h2, #wsite-content .product-title, .blog-sidebar h2{font-family:Georgia !important;color:#DB0D0D !important;}
+#wsite-title{}
+#wsite-content a:link, .blog-sidebar a:link{color:#339999 !important;}
+#wsite-content a:visited, .blog-sidebar a:visited{color:#339999 !important;}
+#wsite-content a:hover, .blog-sidebar a:hover{color:#336666 !important;}
+</style>
+<style type='text/css'>
+.wsite-header {
+	background-image: url(uploads/9/9/9/7/9997734/header_images/1327973398.jpg) !important;
+	background-position: 0 0 !important;
+}
+</style>
+<script type='text/javascript'><!--
+var STATIC_BASE = 'http://nhd.weebly.com/';
+var STYLE_PREFIX = 'wsite';
+//-->
+</script>
+<script type='text/javascript' src='http://nhd.weebly.com/libraries/prototype/1.7-custom/prototype.min.js'></script>
+<script type='text/javascript' src='http://nhd.weebly.com/libraries/scriptaculous/1.9.0-custom/effects.min.js'></script>
+<script type='text/javascript' src='http://nhd.weebly.com/editor/images/common/utilities.js?16'></script>
+<script type='text/javascript' src='http://nhd.weebly.com/editor/images/common/lightbox202.js?110'></script>
+<script type='text/javascript' src='http://nhd.weebly.com/editor/libraries/flyout_menus.js?13'></script>
+<script type='text/javascript'><!--
+var IS_ARCHIVE=1;
+function initFlyouts(){initPublishedFlyoutMenus([{"id":"473559779432696271","title":"Home","url":"index.html"},{"id":"598718612949553899","title":"Alan Turing","url":"alan-turing.html"},{"id":"768247149524712579","title":"Mathematical Influences","url":"mathematical-influences.html"},{"id":"945295052631009564","title":"Turing Machine","url":"turing-machine.html"},{"id":"307877589444217650","title":"Enigma","url":"enigma.html"},{"id":"954582899709045824","title":"Revolution","url":"revolution.html"},{"id":"140503011612977417","title":"Supplements","url":"supplements.html"}],'954582899709045824',"<li class='wsite-nav-more'><a href=\"#\">more...<\/a><\/li>",'active',false)}
+if (Prototype.Browser.IE) window.onload=initFlyouts; else document.observe('dom:loaded', initFlyouts);
+//-->
+</script>
+</head>
+<body onload="onLoad();" onresize="onResize();" class='wsite-theme-light wsite-page-revolution'>
+<div id="container">
+    <div id="top">
+      <div id="header" class="wsite-header">
+        <div id="title"><span class='wsite-logo'><table style='height:55px'><tr><td><span class='wsite-title-placeholder'>&nbsp;</span><span style="display:none">Alan Turing's Computational Revolution</span></td></tr></table></span></div><!-- header text -->
+      </div>
+      <div class="nav bl"><div class="nav2 br">
+        <div id="navdiv">
+          <ul id="navlist">
+            <li id='pg473559779432696271'><a href="index.html">Home</a></li><li id='pg598718612949553899'><a href="alan-turing.html">Alan Turing</a></li><li id='pg768247149524712579'><a href="mathematical-influences.html">Mathematical Influences</a></li><li id='pg945295052631009564'><a href="turing-machine.html">Turing Machine</a><div class='wsite-menu-wrap' style='display:none'><ul class='wsite-menu'><li id='wsite-nav-228490344918298527'><a href='turing-primitives.html'><span class='wsite-menu-title'>Turing Primitives</span></a><div class='wsite-menu-wrap' style='display:none'><ul class='wsite-menu'></ul></div></li><li id='wsite-nav-497092600704870570'><a href='computing-machines.html'><span class='wsite-menu-title'>Computing Machines</span></a><div class='wsite-menu-wrap' style='display:none'><ul class='wsite-menu'></ul></div></li></ul></div></li><li id='pg307877589444217650'><a href="enigma.html">Enigma</a></li><li id="active"><a href="revolution.html">Revolution</a></li><li id='pg140503011612977417'><a href="supplements.html">Supplements</a><div class='wsite-menu-wrap' style='display:none'><ul class='wsite-menu'><li id='wsite-nav-910025379623917863'><a href='documents.html'><span class='wsite-menu-title'>Documents</span></a><div class='wsite-menu-wrap' style='display:none'><ul class='wsite-menu'></ul></div></li><li id='wsite-nav-360402139955800296'><a href='photos.html'><span class='wsite-menu-title'>Photos</span></a><div class='wsite-menu-wrap' style='display:none'><ul class='wsite-menu'></ul></div></li><li id='wsite-nav-987831437163501051'><a href='annotated-bibliography.html'><span class='wsite-menu-title'>Annotated Bibliography</span></a><div class='wsite-menu-wrap' style='display:none'><ul class='wsite-menu'></ul></div></li><li id='wsite-nav-837013280835339154'><a href='process-paper.html'><span class='wsite-menu-title'>Process Paper</span></a><div class='wsite-menu-wrap' style='display:none'><ul class='wsite-menu'></ul></div></li></ul></div></li>
+            
+          </ul>
+        </div>  
+      </div></div>
+      
+      <div id="content">
+        <div id="left">
+          <div id='wsite-content' class='wsite-not-footer'>
+<div class='wsite-not-footer'>
+<h2  style=" text-align: left; "><font size="6">Revolution</font></h2>
+
+<div ><div id="615837708627029427" align="center" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><div id="tl" class="timeline-default" style="height: 210px;"></div><p>To move the Timeline, use the scroll wheel, the arrow keys, or click and drag it. Click on each event for more information.</p></div>
+
+
+
+</div>
+
+<div ><div style="height: 10px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 10px; overflow: hidden; width: 100%;"></div></div>
+
+<div ><div class="wsite-multicol"><div class='wsite-multicol-table-wrap' style='margin:0 -5px'><table class='wsite-multicol-table'><tbody class='wsite-multicol-tbody'><tr class='wsite-multicol-tr'><td class='wsite-multicol-col' style='width:52.844311377246%;padding:0 5px'><div  class="paragraph editable-text" style=" text-align: center; "><strong><font size="3" color="#ff9900">"If one were to ask a mathematician of the early 1930s what computing machines might have to do with mathematics, the response would likely be puzzlement. Adding machines or desktop tabulators might be able to do arithmetic, but that would be of little interest to the pure mathematician."</font></strong><br /><font size="2" color="#000000">-&nbsp;(Henderson)&nbsp;</font><br /></div>
+
+</td><td class='wsite-multicol-col' style='width:47.155688622754%;padding:0 5px'><div ><div style="text-align: right;"><a href='uploads/9/9/9/7/9997734/2784729_orig.jpg?295' rel='lightbox' onclick='if (!lightboxLoaded) return false'><img src="uploads/9/9/9/7/9997734/2784729.jpg?295" style="margin-top: 10px; margin-bottom: 10px; margin-left: 10px; margin-right: 0; border-width:0;" alt="Picture" class="galleryImageBorder" /></a><div style="display: block; font-size: 90%; margin-top: -10px; margin-bottom: 10px;">"Turing in his late teens or early twenties." -Story Center Productions, 2011</div></div></div>
+
+</td></tr></tbody></table></div></div></div>
+
+<div  class="paragraph editable-text" style=" text-align: left; "><font size="2">Turing expanded the use of computation into everyday life. Now, instead of being limited to simple calculations, computation could be used to do anything.</font></div>
+
+<div  class="paragraph editable-text" style=" text-align: center; "><strong style=""><font size="3" color="#ff9900">"The fact remains that everyone who taps at a keyboard, opening a spreadsheet or a word-processing program, is working on an incarnation of a Turing Machine."</font></strong><br /><font size="2">- Paul Gray, Time Magazine</font></div>
+
+<div ><div class="wsite-multicol"><div class='wsite-multicol-table-wrap' style='margin:0 -5px'><table class='wsite-multicol-table'><tbody class='wsite-multicol-tbody'><tr class='wsite-multicol-tr'><td class='wsite-multicol-col' style='width:45.440956651719%;padding:0 5px'><div ><div style="text-align: left;"><a href='uploads/9/9/9/7/9997734/9554805_orig.gif?230' rel='lightbox' onclick='if (!lightboxLoaded) return false'><img src="uploads/9/9/9/7/9997734/9554805.gif?230" style="margin-top: 10px; margin-bottom: 10px; margin-left: 0; margin-right: 10px; border-width:0;" alt="Picture" class="galleryImageBorder" /></a><div style="display: block; font-size: 90%; margin-top: -10px; margin-bottom: 10px;">"Cartoon of a Turing Machine." -University of Pennsylvania, 2010</div></div></div>
+
+</td><td class='wsite-multicol-col' style='width:54.559043348281%;padding:0 5px'><div  class="paragraph editable-text"><br /><font size="2"><br /><span></span>His&nbsp;<a title="" href="turing-machine.html">Turing Machine</a>&nbsp;demonstrated that everything could be translated into simple commands. Now, humans could solve any problem without having to understand the math behind it.<br /></font></div>
+
+</td></tr></tbody></table></div></div></div>
+
+<div  class="paragraph editable-text" style=" text-align: center; "><strong><font color="#ff9900" size="3">&ldquo;The Universal Turing Machine was far ahead of its time, as it would be many years before it could be engineered into reality. However, his idea for a machine that could be programmed to perform different tasks essentially describes every digital computer in existence today.&rdquo;</font></strong><br /><font size="2">- (Beavan)</font></div>
+
+<div  class="paragraph editable-text"><font size="2">The six simple functions that defined the Turing Machine would allow future computers to carry out any operation. Today,&nbsp;the software of our phones, televisions, and laptops is derived from these <a title="" href="turing-primitives.html">Turing Primitives</a>. The importance of these commands is still addressed&nbsp;in computer science classes:</font></div>
+
+<div ><div style="padding-top: 0px; padding-bottom: 20px; text-align: center;">
+<object codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" align="middle"	height="420px" width="620px" >
+<param name="movie" value="/uploads/9/9/9/7/9997734/lect.swf"> 
+<param name="quality" value="high"> 
+<param name="play" value="true"> 
+<param name="loop" value="true"> 
+<param name="wmode" value="transparent"> 
+<param name="allowFullScreen" value="true"> 
+<param name="flashvars" value=""> 
+<embed src="uploads/9/9/9/7/9997734/lect.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" play="true" loop="true" wmode="transparent" allowfullscreen="true" flashvars="" type="application/x-shockwave-flash" align="middle"  height="420px" width="620px"></embed>
+</object>
+</div></div>
+
+<div ><div id="793230387353231074" align="center" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><a href="http://www.adobe.com/go/getflashplayer" target="_blank" border="0"><strong>Get Adobe Flash Player</strong><div>
+		<img src="files/theme/160x41_Get_Flash_Player.jpg" width="160" height="41" alt="Get Adobe Flash Player" border="0" /></div></a>
+</div>
+
+
+
+</div>
+
+<div ><div class="wsite-multicol"><div class='wsite-multicol-table-wrap' style='margin:0 -5px'><table class='wsite-multicol-table'><tbody class='wsite-multicol-tbody'><tr class='wsite-multicol-tr'><td class='wsite-multicol-col' style='width:63.22869955157%;padding:0 5px'><div  class="paragraph editable-text" style=" text-align: center; "><strong><font size="3" color="#ff9900">&ldquo;Turing&rsquo;s research made a huge contribution towards deciphering German radio messages encrypted using the Enigma machine during World War II... His theoretical work, which still forms the basis of information technology to this day, is equally significant. While his contemporaries could not see beyond the pure calculating capabilities of the computer, Turing designed the model of a universal machine capable of solving every algorithmic problem.&rdquo;</font></strong><br /><font size="2" style="color: rgb(0, 0, 0); ">- (Ryska)</font></div>
+
+<div  class="paragraph editable-text"><font size="2">Turing's work on the <a title="" href="enigma.html">Enigma</a> later introduced practical uses for the Turing Machine. Soon, the first computers (Pilot ACE, ENIAC, and UNIVAC) were created based on Turing's ideas. His machine was no longer theoretical, but was now implemented in the real world.</font></div>
+
+</td><td class='wsite-multicol-col' style='width:36.77130044843%;padding:0 5px'><div ><div style="text-align: right;"><a><img src="uploads/9/9/9/7/9997734/69500.jpg?1327884623" style="margin-top: 10px; margin-bottom: 10px; margin-left: 10px; margin-right: 10px; border-width:0;" alt="Picture" class="galleryImageBorder" /></a><div style="display: block; font-size: 90%; margin-top: -10px; margin-bottom: 10px;">"Enigma machine." - Heinz Nixdorf Museums Forum, 2011</div></div></div>
+
+</td></tr></tbody></table></div></div></div>
+
+<div ><div class="wsite-multicol"><div class='wsite-multicol-table-wrap' style='margin:0 -5px'><table class='wsite-multicol-table'><tbody class='wsite-multicol-tbody'><tr class='wsite-multicol-tr'><td class='wsite-multicol-col' style='width:67.296511627907%;padding:0 5px'><div ><div style="text-align: left;"><a href='uploads/9/9/9/7/9997734/284537_orig.jpg?428' rel='lightbox' onclick='if (!lightboxLoaded) return false'><img src="uploads/9/9/9/7/9997734/284537.jpg?428" style="margin-top: 10px; margin-bottom: 10px; margin-left: 0; margin-right: 10px; border-width:0;" alt="Picture" class="galleryImageBorder" /></a><div style="display: block; font-size: 90%; margin-top: -10px; margin-bottom: 10px;">"Visualization of millions of Facebook friendships between cities around the world." - Paul Butler, 2010</div></div></div>
+
+</td><td class='wsite-multicol-col' style='width:32.703488372093%;padding:0 5px'><div  class="paragraph editable-text" style=" text-align: center; "><br /><strong></strong><strong><font size="3" color="#ff9900">"How well does the model actually fit the real world? ...Turing&rsquo;s model fits computer programs perfectly."</font></strong><br /><font size="2">- (Main)</font></div>
+
+</td></tr></tbody></table></div></div></div>
+
+<div ><div class="wsite-multicol"><div class='wsite-multicol-table-wrap' style='margin:0 -5px'><table class='wsite-multicol-table'><tbody class='wsite-multicol-tbody'><tr class='wsite-multicol-tr'><td class='wsite-multicol-col' style='width:33.575581395349%;padding:0 5px'><div  class="paragraph editable-text" style=" text-align: center; "><strong><font size="3" color="#ff9900">&ldquo;Turing was a genius and a visionary who foresaw the digital world in which we now live and who believed machines would one day think.</font></strong><strong><font size="3" color="#ff9900">&rdquo;</font></strong><br /><font size="2">- (Harrington)</font></div>
+
+</td><td class='wsite-multicol-col' style='width:66.424418604651%;padding:0 5px'><div  class="paragraph editable-text"><font size="2">Today, computing is the heart of society, connecting everybody digitally. Almost everything relies on computers performing calculations that do not need to be understood by the user.&nbsp;</font><span style="font-size: small;">This change began with a man who combined math with machines. He transformed the use of mathematics and applied it to problem solving in everyday life.&nbsp;</span><span style="font-size: small;">This was the story of how Alan Turing, an unorthodox mathematician, developed a conceptual computer, the Turing Machine, which revolutionized computation.</span></div>
+
+</td></tr></tbody></table></div></div></div>
+
+<div  class="paragraph editable-text" style=" text-align: center; "><font size="3" color="#ff9900"><strong>"Our day-to-day lives would be different in how [we] learn things."</strong></font><br /><font size="2">- (Main)</font></div>
+
+<div ><div class="wsite-multicol"><div class='wsite-multicol-table-wrap' style='margin:0 -15px'><table class='wsite-multicol-table'><tbody class='wsite-multicol-tbody'><tr class='wsite-multicol-tr'><td class='wsite-multicol-col' style='width:50%;padding:0 15px'><div  class="paragraph editable-text" style=" text-align: left; "><br /><br /><font size="2" color="#000000"><a href="enigma.html" title="">Back to Enigma</a></font></div>
+
+</td><td class='wsite-multicol-col' style='width:50%;padding:0 15px'><div  class="paragraph editable-text" style=" text-align: right; "><br /><br /><font size="2"><a href="supplements.html" title="">Next to Supplements</a></font></div>
+
+</td></tr></tbody></table></div></div></div>
+
+</div>
+</div>
+
+        </div>
+      </div>
+      
+      <div class="footer tl"><div class="tr"><div class="br"><div class="bl">
+        <div id="copyright"><span id='weeblyFooter'>By Logan Garbarini, Sean Moore, and Lawrence Zhang - Senior Division - Group Website</span></div>
+        <div class="clear"></div>
+      </div></div></div></div>
+    </div>
+    <div id="bottom">
+    </div>
+  </div>
+
+</body>
+</html>

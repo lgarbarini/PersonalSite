@@ -1,0 +1,150 @@
+#header {
+  height: 180px;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#first{
+	font-family:Arial, Helvetica, sans-serif;
+	color: #52A7E3;
+	font-size:3.8em;
+	font-weight: bold;
+}
+#last{
+	font-family:Arial, Helvetica, sans-serif;
+	color: #FAFAFA;
+	font-size:3.8em;
+}
+#logo{
+  float: left;
+	margin-bottom: 5px;
+}
+#topnav {
+  float: right;
+  list-style-type:none;
+  margin-top:70px;
+  padding:0;
+}
+.nav{
+  display:inline;
+  margin:0;
+}
+#subtitle{
+  position:relative;
+  top:-20px;
+  left:25px;
+}
+h1{
+  float: left;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:1.3em;
+	color: #FAFAFA;
+}
+.navlinks{
+  float: left;
+  font-family:"Arial-Black", Arial, Helvetica, sans-serif;
+  font-size:.8em;
+  padding:15px;
+  font-weight:bold;
+}
+a:link {
+  text-decoration:none;
+  color:#52A7E3;
+}
+a:visited {
+  text-decoration:none;
+  color:#52A7E3;
+}
+a:hover {
+  text-decoration:none;
+  color:#FAFAFA;
+}
+a:active {
+  text-decoration:none;
+  color:#FAFAFA;
+}
+body{
+  background-image:url('galactic4.jpg');
+	background-size:100% auto;
+	background-repeat:no-repeat;
+	background-color: black;
+}
+a.active {
+  text-decoration:none;
+  color:#FAFAFA;
+}
+#content{
+  float:left;
+  position:relative;
+  background-color:#F0F0F0;
+  width: 900px;
+  height:400px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 1px 1px 3px #232323;
+  border-radius: 15px;
+}
+#info{
+  margin-top:15px;
+  margin-left:15px;
+}
+p{
+  margin-left:15px;
+  margin-right:15px;
+  font-family:Helvetica, Arial, sans-serif;
+  font-size:1em;
+  font-color:#232323;
+}
+.contact{
+  margin-left:15px;
+  font-family:Helvetica, Arial, sans-serif;
+  font-size:1.3em;
+}
+ul.contact{
+  list-style-type:none;
+}
+#footer{
+  float: right;
+  margin-top: 20px;
+  position: relative;
+  background-color:#555555;
+  width: 900px;
+  height:50px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 1px 1px 3px #232323;
+  border-radius: 15px;
+	color: #FAFAFA !important;
+}
+#idl{
+  position: fixed;
+  margin-top: 200px;
+  right:0px;
+}
+#portfolio{
+  margin-left:15px;
+  font-family:Helvetica, Arial, sans-serif;
+  font-size:2.0em;
+  color:#1668D9;
+  margin-top:15px;
+  margin-left:15px;
+}
+.contact:link {
+  text-decoration:none;
+  color:#52A7E3;
+}
+.contact:visited {
+  text-decoration:none;
+  color:#52A7E3;
+}
+.contact:hover {
+  text-decoration:none;
+  color:#000000;
+}
+.contact:active {
+  text-decoration:none;
+  color:#000000;
+}
+#footer-text{
+	color:#777777;
+}
