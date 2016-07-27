@@ -85,6 +85,22 @@ mark {
   padding: 0 20px;
 }
 
+.link {
+  color: #000;
+}
+
+.link:visited{
+  color: #000;
+}
+
+.link:hover {
+  color: #FFF;
+}
+
+.link:active {
+  color: #555;
+}
+
 
 /* particleground demo */
 
