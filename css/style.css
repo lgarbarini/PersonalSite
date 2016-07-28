@@ -77,6 +77,10 @@ ul {
   filter: invert(100%);
 }
 
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
 
 
 mark {
@@ -144,7 +148,9 @@ h1 {
   font-size: 85px;
   font-weight: 700;
   letter-spacing: 0.015em;
-
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 
@@ -167,6 +173,14 @@ p {
   h1::after {
     height: 8px;
   }
+  .logos {
+    width: 60px;
+    height: 60px;
+  }
+  li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 @media only screen and (max-width: 568px) {
@@ -182,8 +196,13 @@ p {
   p {
     font-size: 18px;
   }
-  .btn {
-    font-size: 16px;
+  .logos {
+    width: 45px;
+    height: 45px;
+  }
+  li {
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 
@@ -193,5 +212,13 @@ p {
   }
   h1::after {
     height: 4px;
+  }
+  .logos {
+    width: 40px;
+    height: 40px;
+  }
+  li {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
   }
 }
